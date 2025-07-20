@@ -80,10 +80,10 @@ b.	manually add the Pillow library, however, it's very time consuming, so we wil
 ### Note: This is important because in order to resize the image we upload in our source S3 bucket, a python library called Pillow is required in our code to resize the image.
 
 1.	Now we have to go to the code section and scroll down to layers.
-a.	I already had Pillow installed locally, so I will make this easy on myself. There are many other ways to get Pillow uploaded to a Lambda function.
-b.	Create a Zip file of the Pillow directory using zip -r mylayer.zip python/
+  a.	I already had Pillow installed locally, so I will make this easy on myself. There are many other ways to get Pillow uploaded to a Lambda function.
+  b.	Create a Zip file of the Pillow directory using zip -r mylayer.zip python/
 ### Note: I have uploaded the mylayers.zip file under the Repo for those who just want to go faster!
-c.	Ensure the python directory is at the root of the zip file or Lambda will not recognize it.
+  c.	Ensure the python directory is at the root of the zip file or Lambda will not recognize it.
 3.	Under the Lambda function select a Add a layer.
 4.	Select Upload a zip file and use the mylayer.zip that was created.
 5.	Select the appropriate architecture and Python version 3.9 (same as was used above).
